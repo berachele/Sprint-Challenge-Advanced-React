@@ -9,10 +9,10 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-// test("If header 'Women's World Cup: Google Searches' is on document", () => {
-//   const {getByText} = render(<App/>);
-//   const showHeader = getByText(/Women's World Cup: Google Searches/i);
-//   console.log(showHeader)
-//   expect(showHeader).toBeVisible();
-// })
+test("If header 'Women's World Cup: Google Searches' is on document", () => {
+  const {getByText} = render(<App/>);
+  const showHeader = getByText(/Women's World Cup: Google Searches/i);
+  console.log(showHeader)
+  expect(showHeader).toBeVisible();
+})
 
