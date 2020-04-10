@@ -17,7 +17,7 @@ const Container = props => {
         <div className="App">
             <header className="App-header">
                 <h1 data-testid="header">Women's World Cup: Google Searches</h1>
-                <button onClick={toggleMode}>Dark Mode</button>
+                <button data-testid="button" onClick={toggleMode}>Dark Mode</button>
             </header>
             <div class="cardBody">
                 <PlayerList players={props.players} />

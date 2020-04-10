@@ -44,7 +44,7 @@ h1{
   font-size: 6rem;;
 }
 h2, p{
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   width: 50%;
   font-size: 2rem;
   margin-left: 23%;
