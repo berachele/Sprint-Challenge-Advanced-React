@@ -6,14 +6,14 @@ const PlayerList = props => {
 
     return(
         <div className="playerlist">
-            {/* {props.players.map(player => {
+            {props.players.map(player => {
                 return <PlayerCard 
                 key = {player.id}
                 name = {player.name}
                 country = {player.country}
-                search = {player.search}
+                search = {player.searches}
                 />
-            })} */}
+            })}
         </div>
     )
 }//end of PlayerList
