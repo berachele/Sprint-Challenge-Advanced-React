@@ -29,8 +29,9 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>Women's World Cup: Google Searches</h1>
+          <button>Dark Mode</button>
         </header>
-        <div>
+        <div class="cardBody">
           <PlayerList players={this.state.players} />
         </div>
       </div>

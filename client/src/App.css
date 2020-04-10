@@ -1,14 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=PT+Sans+Narrow&display=swap');
+*{
+  max-width: 100%;
+  font-size: 62.5%;
+}
 .App {
   text-align: center;
 }
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #766659;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Girassol", cursive;
+}
+button{
+  border-radius: 5px;
+  background-color: #b8cfdc;
+  color: #4a4138;
+  margin-left: 80%;
+}
+.cardBody{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #b8cfdc;
+}
+.playerlist{
+  margin-left: 28%;
+}
+.card{
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  border-radius: 5px;
+  background-color: #f9e3e0;
+  color: #4a4138;
+}
+h1{
+  color: #f9e3e0;
+  font-size: 6rem;;
+}
+h2, p{
+  border: 1px solid purple;
+  width: 50%;
+  font-size: 2rem;
+  margin-left: 23%;
+  color: #4a4138;
 }
 
+/* dark mode styling */
+.dark-mode .App-header{
+    background-color: #36413e;
+  }
+
+.dark-mode button{
+    color: #36413e;
+  }
+
+.dark-mode .cardBody{
+    background-color: #8d6d92;
+  }
+
+.dark-mode .card{
+    background-color: #5d5e60;
+  }
+.dark-mode h1{
+  color: #b8cfdc;
+}
+.dark-mode h2, .dark-mode p{
+    color: #f9e3e0;
+  }

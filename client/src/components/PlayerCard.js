@@ -5,9 +5,9 @@ const PlayerCard = props => {
 
     return(
         <div className="card">
-            <h2>Name: {props.name}</h2>
-            <h3>Country: {props.country}</h3>
-            <h4>Number of Searches: {props.search}</h4>
+            <h2>{props.name}</h2><br/><br/>
+            <p>Country: {props.country}</p>
+            <p>Number of Searches: {props.search}</p>
         </div>
     )
 }//end of PlayerCard
