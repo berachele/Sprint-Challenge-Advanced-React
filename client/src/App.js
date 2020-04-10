@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import axios from "axios"
 import Container from "./components/Container"
-import useDarkMode from "./hooks/useDarkMode"
 
 class App extends React.Component {
   //constructor

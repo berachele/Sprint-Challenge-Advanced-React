@@ -1,13 +1,14 @@
 import React from "react"
 import PlayerList from "./PlayerList"
-import useDarkMode from "./hooks/useDarkMode"
+import useDarkMode from "../hooks/useDarkMode"
 
 const Container = props => {
+    console.log("PROPS IN CONTAINER", props)
     //bringing in hook
     const [darkMode, setDarkMode] = useDarkMode()
     
     //create togglemode
-    toggleMode = event => {
+    const toggleMode = event => {
       event.preventDefault()
       setDarkMode(!darkMode);
     }
@@ -16,10 +17,10 @@ const Container = props => {
         <div className="App">
             <header className="App-header">
                 <h1 data-testid="header">Women's World Cup: Google Searches</h1>
-                <button onChange={handleChange} onClick={toggleMode} >Dark Mode</button>
+                <button onClick={toggleMode}>Dark Mode</button>
             </header>
             <div class="cardBody">
-                <PlayerList players={props} />
+                <PlayerList players={props.players} />
             </div>
       </div>
     )

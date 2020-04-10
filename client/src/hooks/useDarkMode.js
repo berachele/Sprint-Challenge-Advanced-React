@@ -16,12 +16,15 @@ const useDarkMode = () => {
             p.classList.add("dark-mode")
             button.classList.add("dark-mode")
         }else {
-            div.classList.remove("dark-mode")
-            h1.classList.remove("dark-mode")
-            h2.classList.remove("dark-mode")
-            p.classList.remove("dark-mode")
-            button.classList.remove("dark-mode")
+            return false
+            // div.classList.remove("dark-mode"),
+            // h1.classList.remove("dark-mode"),
+            // h2.classList.remove("dark-mode"),
+            // p.classList.remove("dark-mode"),
+            // button.classList.remove("dark-mode");
         }
+        //testing
+        console.log("Is DarkMode on??", value)
     }, [value])
     return [value, setValue]
 }
