@@ -2,7 +2,7 @@ import React from "react"
 import PlayerCard from "./PlayerCard"
 
 const PlayerList = props => {
-    console.log("This is the props in FollowerList -->", props)
+    // console.log("This is the props in FollowerList -->", props)
 
     return(
         <div className="playerlist">

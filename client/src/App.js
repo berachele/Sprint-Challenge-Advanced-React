@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from "axios"
-import PlayerList from "./components/PlayerList"
+import Container from "./components/Container"
+import useDarkMode from "./hooks/useDarkMode"
 
 class App extends React.Component {
   //constructor
@@ -26,16 +27,8 @@ class App extends React.Component {
   //render
   render(){
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Women's World Cup: Google Searches</h1>
-          <button>Dark Mode</button>
-        </header>
-        <div class="cardBody">
-          <PlayerList players={this.state.players} />
-        </div>
-      </div>
-    );//end of return
+      <Container players={this.state.players}/>
+    );
   }//end of render
 }
 

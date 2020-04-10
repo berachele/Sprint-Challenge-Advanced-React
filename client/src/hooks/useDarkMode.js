@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from "react"
 
 const useDarkMode = () => {
-    // const [value, setValue] = useState(() => {
-
-    // })
+    const [value, setValue] = useState(false)
 
     const div = document.getElementsByTagName("div"),
                   h1 = document.getElementsByTagName("h1"),
@@ -25,6 +23,7 @@ const useDarkMode = () => {
             button.classList.remove("dark-mode")
         }
     }, [value])
+    return [value, setValue]
 }
 
 export default useDarkMode
